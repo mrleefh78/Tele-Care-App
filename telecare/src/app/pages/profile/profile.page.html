@@ -11,26 +11,27 @@
       <ion-input type ='text' name="firstName" [(ngModel)] = "PostData.FirstName"></ion-input>
     </ion-item>
     <ion-item>
+      <ion-label position="stacked">Middle Name</ion-label>
+      <ion-input type ='text' name="middleName" [(ngModel)] = "PostData.MiddleName"></ion-input>
+    </ion-item>
+    <ion-item>
       <ion-label position="stacked">Last Name</ion-label>
       <ion-input type ='text' name="lastName"  [(ngModel)] = "PostData.LastName"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="stacked">Date of Birth</ion-label>
-      <ion-datetime value="2020-10-01T15:43:40.394Z" display-timezone="utc" name="dateOfBirth"></ion-datetime>
+      <ion-datetime value="2020-10-01T15:43:40.394Z" display-timezone="utc" name="dateOfBirth" [(ngModel)] = "PostData.DOB"></ion-datetime>
     </ion-item>
     <ion-item>
-      <ion-label position="stacked">Mobile Number</ion-label>
-      <ion-input type ='number' name="mobileNumber" [(ngModel)] = "PostData.Phone"></ion-input>
+      <ion-label position="stacked">Gender</ion-label>
+      <ion-select name="gender" [(ngModel)] = "PostData.Gender">
+        <ion-select-option value="Female">Female</ion-select-option>
+        <ion-select-option  value="Male">Male</ion-select-option>
+        <ion-select-option  value="Non-binary/non-conforming">Non-binary/non-conforming</ion-select-option>
+        <ion-select-option  value="Prefer not to answer">Prefer not to answer</ion-select-option>      
+      </ion-select>
     </ion-item>
-    <ion-item>
-      <ion-label position="stacked">Email</ion-label>
-      <ion-input type ='email' name="username"  [(ngModel)] = "PostData.UserName"></ion-input>
-    </ion-item>
-    
-    <ion-item>
-      <ion-button expand="block" shape='round' (click)="update()" >Update</ion-button>
-      <ion-button expand="block" shape='round' (click)="update()" >Change Password</ion-button>
-    </ion-item>
-   
+       
+     
   </ion-list>
 </ion-content>

@@ -23,7 +23,7 @@ export class AppointmentsPage implements OnInit {
       this.UserData = res;
       console.log("user", res)
       this.userID = res.ID;           
-    this.serviceName="ServiceRequest?userID=" + "6";
+    this.serviceName="ServiceRequest?userID=" +  this.userID ;
    
     this.getAppointment(this.serviceName, res);
     });
@@ -38,6 +38,17 @@ export class AppointmentsPage implements OnInit {
     }, err=> {
       console.log(err);
   
+    });
+  }
+
+  refreshData(){
+    this.authService.userData$.subscribe((res:any) => {
+      this.UserData = res;
+      console.log("user", res)
+      this.userID = res.ID;           
+    this.serviceName="ServiceRequest?userID=" +  this.userID ;
+   
+    this.getAppointment(this.serviceName, res);
     });
   }
 
