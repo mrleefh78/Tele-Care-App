@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Request Appointment</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>   
+    <ion-item>
+      <ion-label>Physician</ion-label>     
+      <ion-label >
+        <h2><b></b>{{physician.FirstName}}  {{physician.LastName}}</h2>
+        <h3>{{physician.SpecialtyName}}</h3>          
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Date</ion-label>
+      <ion-datetime  placeholder="Select Date" [(ngModel)] = "PostData.PreferDate"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>Time</ion-label>
+      <ion-datetime display-format="h:mm A" picker-format="h:mm A" value="1990-02-19T07:43Z"  [(ngModel)] = "PostData.PreferDate"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-textarea rows="4" placeholder="Your Message" [(ngModel)] = "PostData.Notes"></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <ion-button color="primary" (click)="newAppointment()">Submit</ion-button>
+    </ion-item>
+   
+  </ion-list>
+</ion-content>

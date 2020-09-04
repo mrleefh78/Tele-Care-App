@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Bright Tele-care</string>
+    <string name="title_activity_main">Bright Tele-care</string>
+    <string name="package_name">bright.telecare.starter</string>
+    <string name="custom_url_scheme">bright.telecare.starter</string>
+</resources>

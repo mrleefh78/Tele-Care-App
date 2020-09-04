@@ -1,0 +1,8 @@
+{
+  "name": "Bright Tele-care",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

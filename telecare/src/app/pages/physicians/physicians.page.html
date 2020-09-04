@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Physicians</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-toolbar>
+    <ion-title>Find your Doctor</ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-searchbar (ionInput)="filterPhysician($event)"></ion-searchbar>
+  </ion-toolbar>
+<ion-list>
+  <ion-item *ngFor="let item of physicians">
+ 
+    <ion-avatar slot="start">
+      <img src="assets/images/doctor-icon.jpg">
+    </ion-avatar>
+    <ion-label (click) = "selectPhysician(item)" >
+      <h2>{{item.FirstName}}  {{item.LastName}}</h2>
+      <h3>{{item.SpecialtyName}}</h3>    
+    
+    </ion-label>
+  </ion-item> 
+</ion-list>
+</ion-content>

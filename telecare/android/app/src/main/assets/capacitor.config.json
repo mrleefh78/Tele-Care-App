@@ -1,0 +1,13 @@
+{
+  "appId": "bright.telecare.starter",
+  "appName": "Bright Tele-care",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}
