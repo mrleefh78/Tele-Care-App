@@ -2,7 +2,7 @@
 <widget id="bright.telecare.starter" version="0.0.4" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Bright Tele-Care</name>
     <description>Bright Tele-Care App</description>
-    <author email="mrleefh78@gmail.com" href="http://brightcare-assist.com/">F Lee</author>
+    <author email="fernand.h.lee@gmail.com" href="http://brightcare-assist.com/">F Lee</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />

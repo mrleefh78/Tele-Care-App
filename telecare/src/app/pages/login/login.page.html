@@ -22,9 +22,16 @@
     </ion-item>
 
     <ion-item lines='none'>
-      <a routerLink='/signup'>Create Account</a>
+      <ion-label text-left>
+        <small><a routerLink='/signup'>Create Account</a></small>
+      </ion-label>    
+      <ion-label text-right>
+         <small><a routerLink='/newpassword'>Forgot Password?</a></small>
+      </ion-label>   
     </ion-item>
-    <ion-button expand="block" shape='round' (click)="loginAction()" >Login In</ion-button>
+   
+
+    <ion-button expand="block"  (click)="loginAction()" >Login In</ion-button>
   </ion-list>
 </form>
 </ion-content>

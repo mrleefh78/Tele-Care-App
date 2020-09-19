@@ -1,6 +1,6 @@
 {
   "appId": "bright.telecare.starter",
-  "appName": "Bright Tele-care",
+  "appName": "Bright Tele-Care",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",

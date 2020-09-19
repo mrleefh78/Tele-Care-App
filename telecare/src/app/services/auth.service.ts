@@ -52,4 +52,21 @@ export class AuthService {
       return this.httpService.post('ServiceRequest/Post',postData);
 
     }
+
+    getResetCode(postData:any){
+      var username = postData;
+      var userid = 1;
+      return this.httpService.get('user/GenerateResetCode?username='+ username + '&userid=' + userid + '',postData);
+    }
+
+    getResetCode2(postData:any){
+      var username = postData.UserID;
+      var userid = 1;
+      return this.httpService.get('user/GenerateResetCode?username='+ username + '&userid=' + userid + '',postData);
+    }
+
+    resetPassword(postData:any): Observable<any>{
+      return this.httpService.post('ResetPassword/Post',postData);
+
+    }
 }

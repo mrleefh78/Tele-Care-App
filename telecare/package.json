@@ -1,7 +1,7 @@
 {
   "name": "telecare",
   "version": "0.0.2",
-  "author": "Ionic Framework",
+  "author": "F Lee",
   "homepage": "https://BrightCare-Assist.com/",
   "scripts": {
     "resources": "capacitor-resources -p android,ios",
@@ -60,7 +60,7 @@
     "tslint": "~6.1.0",
     "typescript": "~3.8.3"
   },
-  "description": "An Ionic project",
+  "description": "An Tele-health project",
   "cordova": {
     "plugins": {
       "cordova-plugin-inappbrowser": {}
